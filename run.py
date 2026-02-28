@@ -1,8 +1,9 @@
 import uvicorn
 from fastapi import FastAPI
+from pydantic import BaseModel
 app=FastAPI()
 
-class Item:
+class Item(BaseModel):
     a:int
     b:int
 

@@ -6,7 +6,7 @@ class Item:
     a:int
     b:int
 
-app.post("/test")
+@app.post("/test")
 def test(item:Item):
     a=item.a
     b=item.b
